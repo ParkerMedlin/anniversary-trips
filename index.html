@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Day Trip Ideas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #98d4a1 0%, #c8e6c9 50%, #a5d6a7 100%);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .leaf {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            pointer-events: none;
+            z-index: 1;
+            animation: float 15s infinite ease-in-out;
+        }
+
+        .leaf:nth-child(1) { left: 5%; animation-delay: 0s; animation-duration: 18s; }
+        .leaf:nth-child(2) { left: 15%; animation-delay: -3s; animation-duration: 20s; }
+        .leaf:nth-child(3) { left: 25%; animation-delay: -6s; animation-duration: 16s; }
+        .leaf:nth-child(4) { left: 35%; animation-delay: -9s; animation-duration: 22s; }
+        .leaf:nth-child(5) { left: 45%; animation-delay: -2s; animation-duration: 17s; }
+        .leaf:nth-child(6) { left: 55%; animation-delay: -5s; animation-duration: 19s; }
+        .leaf:nth-child(7) { left: 65%; animation-delay: -8s; animation-duration: 21s; }
+        .leaf:nth-child(8) { left: 75%; animation-delay: -1s; animation-duration: 15s; }
+        .leaf:nth-child(9) { left: 85%; animation-delay: -4s; animation-duration: 23s; }
+        .leaf:nth-child(10) { left: 92%; animation-delay: -7s; animation-duration: 18s; }
+
+        @keyframes float {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #2e7d32;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(255,255,255,0.5);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #558b2f;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .trip-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 20px 0;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .trip-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .trip-card h2 {
+            font-size: 2rem;
+            color: #388e3c;
+            margin-bottom: 20px;
+        }
+
+        .trip-card p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .highlights {
+            text-align: left;
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(165, 214, 167, 0.3);
+            border-radius: 10px;
+        }
+
+        .highlights h3 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        .highlights ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .highlights li {
+            padding: 8px 0;
+            color: #444;
+            border-bottom: 1px dashed #a5d6a7;
+        }
+
+        .highlights li:last-child {
+            border-bottom: none;
+        }
+
+        .highlights li::before {
+            content: "🌿 ";
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #2e7d32;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated leaves (place your leaf images in static/images/) -->
+    <img src="static/images/leaf1.png" alt="" class="leaf">
+    <img src="static/images/leaf2.png" alt="" class="leaf">
+    <img src="static/images/leaf1.png" alt="" class="leaf">
+    <img src="static/images/leaf2.png" alt="" class="leaf">
+    <img src="static/images/leaf1.png" alt="" class="leaf">
+    <img src="static/images/leaf2.png" alt="" class="leaf">
+    <img src="static/images/leaf1.png" alt="" class="leaf">
+    <img src="static/images/leaf2.png" alt="" class="leaf">
+    <img src="static/images/leaf1.png" alt="" class="leaf">
+    <img src="static/images/leaf2.png" alt="" class="leaf">
+
+    <div class="content">
+        <h1>Anniversary Adventure Options</h1>
+        <p class="subtitle">Pick our perfect day together</p>
+
+        <div class="trip-card">
+            <h2>Chattanooga, Tennessee</h2>
+            <p>
+                A charming riverside city nestled in the mountains,
+                perfect for a romantic day exploring together.
+            </p>
+
+            <div class="highlights">
+                <h3>Things We Could Do</h3>
+                <ul>
+                    <li>Walk across the Walnut Street Pedestrian Bridge</li>
+                    <li>Explore the Tennessee Aquarium</li>
+                    <li>Ride the Incline Railway up Lookout Mountain</li>
+                    <li>Stroll through the Bluff View Art District</li>
+                    <li>Have dinner by the river</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Add more trip options here -->
+
+        <footer>
+            <p>Happy Anniversary!</p>
+        </footer>
+    </div>
+</body>
+</html>
